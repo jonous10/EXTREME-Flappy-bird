@@ -1,0 +1,24 @@
+Logg:
+
+04.11.24
+I dag prøvde jeg meg mest rundt og lærte mer om pygame, som er noe innenfor python.
+
+05.11.24
+I dag skrev jeg classes og mer av selve spillet lærte mer om pygame.
+
+06.11.24
+Grunnen til at jeg har bruk classes for pipe og player er fordi for pipes så vil jeg kopiere flere og flere, 
+da er det greit å holde individuell informasjon for hver pipe, 
+og for da kan jeg per objekt om den har passert player eller ikke.
+Jeg joobet til å få et score og highscore system, ganske lett; bare sjekket gjennom for hver pipe i classen pipe.
+Jeg fikk mye bedre system og organisering på koden. Jeg lagde funksjonen: QuickText() fordi jeg syntes det var litt for krevende å lage text,
+jeg ville gjøre det så lett at man kan bare putte inn mange input parametre også *poof* kommer det text.
+
+07.11.24
+Jeg lagde QuickImage() og fant ut at pygame.image.load() var veldig dyr og unødvendig for mitt tilfelle, så jeg istedet loadet bildene på forhånd. 
+I dag har jeg også fått til the player path som viser hvilken vei fuglen har bevegd seg, det ser fint ut og fungerer også i coop.
+Jeg skulle ønske at jeg kunne lage en slags fade og det ser ikke ut som er en mulighet i funksjonen pygame.draw.lines(), jeg kunne lage en egen drawLines() funksjon som gjør det men det kan ta for lang tid.
+
+08.11.24
+Jeg hadde lyst til sette rotasjonen på fuglen ved å ta den inverse tangens av lengde gått x over lengde gått y (opposite / adjacent) også bruke funksjonen pygame.transform.rotate(),
+ men den funksjonen ville ikke fungere bra i det hele tatt.
